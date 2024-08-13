@@ -6,6 +6,4 @@ Started from Augest 12, 2024
 
 - Developing Tools: Clion, STM32CubeMX
 
-- 
-
-
+- Blog: blog.ruakker.moe
