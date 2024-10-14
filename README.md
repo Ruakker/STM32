@@ -2,8 +2,10 @@
 
 Started from Augest 12, 2024
 
-- Model: `STM32F103ZET6`
+- Model: `STM32F103VET6`
 
-- Developing Tools: Keil5
+- Developing Tools: Clion, STM32CubeMX
 
-- Blog: blog.ruakker.moe
+- 
+
+
