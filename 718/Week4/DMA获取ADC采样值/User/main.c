@@ -9,7 +9,7 @@ uint16_t LastTime, CurrentTime;
 int main(void) {
     OLED_Init();
 
-    OLED_ShowString(3, 1, "Time Used:    us");
+    OLED_ShowString(3, 1, "Time Used:    ms");
 
     AD_Init();
     Serial_Init();
@@ -23,7 +23,7 @@ int main(void) {
         OLED_ShowNum(1, 6, ADValue[1], 4);
         OLED_ShowNum(2, 1, ADValue[2], 4);
         OLED_ShowNum(2, 6, ADValue[3], 4);
-        OLED_ShowNum(3, 12, (CurrentTime - LastTime), 2);
+        OLED_ShowNum(3, 12, (CurrentTime - LastTime) / 10, 2);
         Serial_Printf("%d %d %d %d\r\n", ADValue[0], ADValue[1], ADValue[2], ADValue[3]);
     }
 }

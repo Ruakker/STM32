@@ -4,7 +4,7 @@
 // PC4: ADC12_IN14
 // PC5: ADC12_IN15
 
-extern uint16_t ADValue[4];
+uint16_t ADValue[4];
 
 void AD_Init(void) {
     RCC_APB2PeriphClockCmd(RCC_APB2Periph_ADC1, ENABLE);
